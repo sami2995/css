@@ -1,0 +1,50 @@
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+/* Style for the header */
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+/* Style for the gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+/* Style for each image in the gallery */
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Add an empty element after the last image to push it to the left in a two-column layout */
+.gallery::after {
+    content: "";
+    flex: 1 1 350px;
+}
